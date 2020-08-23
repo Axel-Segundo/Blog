@@ -1,19 +1,16 @@
 <?php require 'header.php'; ?>
 
-    <div class="contenedor">
-        <div class="post">
-            <article>
-                <h2 class="titulo">Titulo del articulo</h2>
-                <p class=fecha>6 de Julio de 2020</p>
-                <div class="thumb">
-                    <a href="#">
-                        <img src="<?php echo RUTA; ?>/imagenes/1.jpg" alt="">
-                    </a>
-                </div>
-                <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum expedita nemo laboriosam maxime natus consequuntur totam corrupti, pariatur sequi repellat animi exercitationem odio modi rerum vitae quidem quod minima.</p>
-                <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum expedita nemo laboriosam maxime natus consequuntur totam corrupti, pariatur sequi repellat animi exercitationem odio modi rerum vitae quidem quod minima.</p>
-            </article>
-        </div>
+<div class="contenedor">
+    <div class="post">
+        <article>
+            <h2 class="titulo"><?php echo $post['titulo']; ?></h2>
+            <p class=fecha><?php echo fecha($post['fecha']); ?></p>
+            <div class="thumb">
+                <img src="<?php echo RUTA; ?>/img/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo']; ?>">
+            </div>
+            <p class="extracto"><?php echo nl2br($post['texto']); ?></p>
+        </article>
     </div>
+</div>
 
-<?php  require 'footer.php'; ?>
+<?php require 'footer.php'; ?>

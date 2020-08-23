@@ -2,8 +2,10 @@
 
 <div class="contenedor">
 
+<h2><?php echo $titulo; ?></h2>
+
     <?php
-    foreach ($posts as $post) : ?>
+    foreach ($resultados as $post) : ?>
 
         <div class="post">
             <article>

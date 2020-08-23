@@ -10,12 +10,14 @@ $bd_config = array(
 
 $blog_config = array(
     'post_por_pagina' => '2',
-    'carpeta_imagenes' => 'imagenes/'
+    'carpeta_imagenes' => 'img/'
 );
 
 $blog_admin = array(
-    'usuario' => 'Axel',
-    'password' => '011229'
+    'usuario' => 'Diego',
+    'password' => '123'
 );
+
+
 
 ?>
